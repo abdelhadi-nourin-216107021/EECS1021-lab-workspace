@@ -34,22 +34,22 @@ public class Combinations {
 		
 		System.out.println("Here are all 16 possible combinations: ");
 		
-		System.out.println("("+str1+", "+num1+")");
-		System.out.println("("+str1+", "+num2+")");
-		System.out.println("("+str1+", "+num3+")");
-		System.out.println("("+str1+", "+num4+")");
-		System.out.println("("+str2+", "+num1+")");
-		System.out.println("("+str2+", "+num2+")");
-		System.out.println("("+str2+", "+num3+")");
-		System.out.println("("+str2+", "+num4+")");
-		System.out.println("("+str3+", "+num1+")");
-		System.out.println("("+str3+", "+num2+")");
-		System.out.println("("+str3+", "+num3+")");
-		System.out.println("("+str3+", "+num4+")");
-		System.out.println("("+str4+", "+num1+")");
-		System.out.println("("+str4+", "+num2+")");
-		System.out.println("("+str4+", "+num3+")");
-		System.out.println("("+str4+", "+num4+")");
+		System.out.println("("+num4+", "+str4+")");
+		System.out.println("("+num3+", "+str4+")");
+		System.out.println("("+num2+", "+str4+")");
+		System.out.println("("+num1+", "+str4+")");
+		System.out.println("("+num4+", "+str3+")");
+		System.out.println("("+num3+", "+str3+")");
+		System.out.println("("+num2+", "+str3+")");
+		System.out.println("("+num1+", "+str3+")");
+		System.out.println("("+num4+", "+str2+")");
+		System.out.println("("+num3+", "+str2+")");
+		System.out.println("("+num2+", "+str2+")");
+		System.out.println("("+num1+", "+str2+")");
+		System.out.println("("+num4+", "+str1+")");
+		System.out.println("("+num3+", "+str1+")");
+		System.out.println("("+num2+", "+str1+")");
+		System.out.println("("+num1+", "+str1+")");
 		
 		input.close();
 

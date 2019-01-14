@@ -169,10 +169,12 @@ public class GradeReport {
 		double examFinal = exam*0.35;
 		double total = quizRaw + assRaw + testRaw + midtermFinal + examFinal;
 		
-		System.out.println("Average of quizzes: "+quizAvg);
-		System.out.println("Average of assignments: "+testAvg);
+		System.out.println("Average of quizzes: "+ quizAvg);
+		System.out.println("Average of assignments: "+ assAvg);
 		System.out.println("Average of lab tests: "+ testAvg);
-		System.out.print("Final raw marks: " +total);
+		System.out.print("Final raw marks: " + total);
+		
+		input.close();
 		
 	}
 
