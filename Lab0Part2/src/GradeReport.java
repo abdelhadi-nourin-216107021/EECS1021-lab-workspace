@@ -123,7 +123,7 @@ public class GradeReport {
 		System.out.println("Quiz 3: " +quiz3);
 		System.out.println("Quiz 4: " +quiz4);
 		System.out.println("Quiz 5: " +quiz5);
-		System.out.println("Quiz 6 " +quiz6);
+		System.out.println("Quiz 6: " +quiz6);
 		System.out.println("Quiz 7: " +quiz7);
 		System.out.println("Quiz 8: " +quiz8);
 		System.out.println("Quiz 9: " +quiz9);
@@ -158,12 +158,16 @@ public class GradeReport {
 		System.out.println("-----------------------------------------");
 		
 		//calculations
-		double quizAvg = (quiz1*0.02)+(quiz2*0.02)+(quiz3*0.02)+(quiz4*0.02)+(quiz5*0.02)+(quiz6*0.02)+(quiz7*0.02)+(quiz8*0.02)+(quiz9*0.02);
-		double assAvg = (ass1*0.02)+(ass2*0.02)+(ass3*0.02)+(ass4*0.02)+(ass5*0.02)+(ass6*0.02)+(ass7*0.02)+(ass8*0.02)+(ass9*0.02)+(ass10*0.02);
-		double testAvg = (test1*0.04)+(test2*0.04)+(test3*0.04);
+		double quizRaw = (quiz1*0.02)+(quiz2*0.02)+(quiz3*0.02)+(quiz4*0.02)+(quiz5*0.02)+(quiz6*0.02)+(quiz7*0.02)+(quiz8*0.02)+(quiz9*0.02);
+		double assRaw = (ass1*0.02)+(ass2*0.02)+(ass3*0.02)+(ass4*0.02)+(ass5*0.02)+(ass6*0.02)+(ass7*0.02)+(ass8*0.02)+(ass9*0.02)+(ass10*0.02);
+		double testRaw = (test1*0.04)+(test2*0.04)+(test3*0.04);
+		double quizAvg = (quiz1+quiz2+quiz3+quiz4+quiz5+quiz6+quiz7+quiz8+quiz9)/9;
+		double assAvg = (ass1+ass2+ass3+ass4+ass5+ass6+ass7+ass8+ass9+ass10)/10;
+		double testAvg = (test1+test2+test3)/3;
+		
 		double midtermFinal = midterm*0.15;
 		double examFinal = exam*0.35;
-		double total = quizAvg + assAvg + testAvg + midtermFinal + examFinal;
+		double total = quizRaw + assRaw + testRaw + midtermFinal + examFinal;
 		
 		System.out.println("Average of quizzes: "+quizAvg);
 		System.out.println("Average of assignments: "+testAvg);
