@@ -74,6 +74,7 @@ public class ComputeTax {
 		}else {
 			System.out.println("Illegal Status: " +filing);
 		}
+		input.close();
 	}
 
 }
